@@ -1,0 +1,64 @@
+/* Header CSS Responsive */
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #fff;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar .links a{
+    margin-right: 27px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #241b57;
+}
+.navbar h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 26px;
+    color: #241b57;
+}
+.navbar h4:hover{
+    color: #000;
+    cursor: pointer;
+}
+.navbar .links a:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+/* Adding-Responsiveness */
+@media only screen and (max-width: 600px){
+
+    .navbar{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: auto;
+        overflow-y: hidden;
+    }
+    
+    .navbar h4{
+        font-size: 6vw;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        margin-left: -12px;
+    }
+    
+    .navbar .links a{
+        margin-right: 27px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,12 @@
+/* Home-Page Main CSS */
+html,body{
+    background-color: #fff;
+    font-family: 'Baloo 2', cursive;
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+*{
+    text-decoration: none !important;
+}

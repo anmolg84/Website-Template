@@ -1,0 +1,142 @@
+/* Introduction-Section */
+#intro {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    padding-top: 6em;
+  }
+  
+  #intro .top-right-gradient {
+    position: absolute;
+    top: -40%;
+    right: -30%;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: linear-gradient(#ee9ca7, #ec4357);
+  }
+  
+  #intro .intro-left {
+    display: inline-block;
+    width: 100%;
+    margin-left: 105px;
+    max-width: 400px;
+    padding: 3em 0;
+  }
+  
+  #intro .intro-left h1 {
+    font-size: 2.5em;
+    color: #241b57;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 1em;
+  }
+  
+  #intro .intro-left h1:after {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    content: "";
+    border-radius: 5px;
+    background: #ec4357;
+    opacity: 0.4;
+  }
+  
+  #intro .intro-left p {
+    font-size: 1.125em;
+    line-height: 1.75em;
+  }
+  
+  #intro .intro-left a.intro-cta {
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    max-width: 117px;
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    background: #241b57;
+  }
+  #intro .intro-left a.intro-cta:hover{
+    color: #000;
+  }
+  #intro .intro-right {
+    position: relative;
+    display: inline-block;
+    margin-left: 6em;
+    padding-top: 80px;
+  }
+  
+  #intro .intro-right img {
+    max-width: 570px;
+  }
+  
+  #intro .bottom-left-gradient {
+    position: absolute;
+    bottom: 10px;
+    left: -9%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#c779d0, #4bc0c8);
+  }
+
+/* Adding Responsiveness */
+@media only screen and (max-width: 600px){
+    #intro {
+        max-height: 300px !important;
+        text-align: center;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 40px !important;
+      }
+    
+      #intro .bottom-left-gradient {
+        position: absolute;
+        z-index: -999;
+        left: -12%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(#c779d0, #4bc0c8);
+      }
+    
+      #intro .top-right-gradient {
+        position: absolute;
+        z-index: -999;
+        top: 14%;
+        right: -14%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      #intro .intro-right img {
+        width: 350px;
+      }
+      /* #intro .intro-left{
+          margin-left: 16px;
+      } */
+      #intro .intro-right{
+          padding-top: 10px;
+      }
+    
+      #intro h1 {
+        font-size: 24px !important;
+      }
+    
+      #intro h1::after {
+        margin-left: 180px;
+        margin-bottom: 10px;
+      }
+    
+      #intro .intro-left .intro-cta {
+        display: inline-block !important;
+      }
+}

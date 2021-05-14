@@ -1,0 +1,110 @@
+#about {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px}
+#about .about-left {
+    display: inline-block}
+#about .about-left img {
+    margin-left: 100px;
+    padding-bottom: 0.5em;
+    max-width: 500px}
+#about .about-right {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 10em}
+#about .about-right h1 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 1em;
+    color: #ec4357;}
+  #about .about-right h1::after {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    content: "";
+    border-radius: 5px;
+    background: #241b57;
+    opacity: 0.2;}
+#about .about-right p {
+    font-size: 1.125em;
+    line-height: 1.75em;
+}
+  
+#about .about-right a.cta {
+    position: relative;
+    font-weight: 600;
+    z-index: 99;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2em 0 1em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    background: #241b57;
+}
+  
+#about .top-right-gradient {
+    position: absolute;
+    z-index: -999;
+    top: 45%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#ee9ca7, #ec4357);
+}
+
+/* Adding-Responsiveness */
+@media only screen and (max-width: 600px){
+    #about {
+        text-align: center !important;
+        padding: 0 0.5em;
+        margin-left: -160px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    
+      #about .about-left img {
+        display: none;
+      }
+    
+      #about .about-right {
+        display: inline-block !important;
+      }
+    
+      #about .about-right h1 {
+        font-size: 24px !important;
+      }
+    
+      #about .about-right h1::after {
+        margin-left: 180px;
+        margin-bottom: 10px;
+      }
+    
+      #about .about-right p {
+        font-size: 16px !important;
+      }
+    
+      #about .about-right a {
+        display: inline-block !important;
+      }
+    
+      #about .top-right-gradient {
+        position: absolute;
+        z-index: -999;
+        top: 62%;
+        right: -5%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(#ee9ca7, #ec4357);
+      }
+}
