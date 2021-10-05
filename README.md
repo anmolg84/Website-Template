@@ -1,2 +1,2 @@
 # Website-Template
-Creative and Animated Responsive-Website template
+Seo friendly-Animated-Responsive Website template
